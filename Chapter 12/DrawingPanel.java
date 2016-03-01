@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.ArrayList;
-import 
 public class DrawingPanel
 {
     private ArrayList<Shape> shapeList = new ArrayList<Shape>();
