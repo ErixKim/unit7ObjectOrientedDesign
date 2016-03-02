@@ -1,28 +1,27 @@
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.BorderLayout;
+import javax.swing.*;
 import java.awt.Color;
-import java.util.ArrayList;
-public class DrawingPanel
+import java.awt.Dimension;
+import java.awt.Graphics;
+/**
+ * Write a description of class DrawingPanel here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class DrawingPanel extends JPanel
 {
-    private ArrayList<Shape> shapeList = new ArrayList<Shape>();
     public DrawingPanel()
     {
-        MouseListener listener = new MousePressListener();
+        this.setBackground(Color.WHITE);
     }
     public Color getColor()
     {
-        Color background = this.getBackground();
-        return background;
+        return Color.WHITE;
     }
     public Dimension getPreferredSize()
     {
-        
+        Dimension asdf = new Dimension();
+        return asdf;
     }
     public void pickColor()
     {
@@ -36,36 +35,21 @@ public class DrawingPanel
     {
         
     }
-    public void paintComponent(Graphics g)
+    public void paintComponent(Graphics g)      
     {
         
     }
-    public class MyMouseListener implements MouseListener
-    {
-        public void mousePressed(MouseEvent event)
-        {
-            int x = event.getX();
-            int y = event.getY();
-        }
 
-        public void mouseReleased(MouseEvent event)
-        {
-            
-        }
-
-        public void mouseClicked(MouseEvent event) 
-        {
-            
-        }
-
-        public void mouseEntered(MouseEvent event) 
-        {
-            
-        }
-
-        public void mouseExited(MouseEvent event)
-        {
-            
-        }
-    }
+//     class ClickListener implements MouseListener
+//     {
+//         public void mouseClicked(MouseEvent event) 
+//         {
+//             int x = event.getX();
+//             int y = event.getY();
+//             this.drawDot(x,y);
+//         }
+//     }
 }
+
+
+
