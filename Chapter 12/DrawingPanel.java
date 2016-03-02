@@ -1,53 +1,42 @@
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.BorderLayout;
 import java.awt.Color;
-<<<<<<< HEAD
-import java.awt.Dimension;
-import java.awt.Graphics;
-/**
- * Write a description of class DrawingPanel here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class DrawingPanel extends JPanel
-{
-    public DrawingPanel()
-    {
-        this.setBackground(Color.WHITE);
-=======
 import java.util.ArrayList;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.geom.Ellipse2D;
 import java.util.Random;
+import javax.swing.JColorChooser;
 public class DrawingPanel extends JPanel
 {
-    //     private ArrayList<Shape> shapeList = new ArrayList<Shape>();
+    private Color activeColor;
+    private ArrayList<Shape> shapeList = new ArrayList<Shape>();
     public DrawingPanel()
     {
-        //         MouseListener listener = new MousePressListener();
->>>>>>> origin/master
+        MouseListener listener = new MousePressListener();
+        activeColor = Color.BLUE;
     }
 
     public Color getColor()
     {
-        return Color.WHITE;
+        return activeColor;
     }
 
     public Dimension getPreferredSize()
     {
-<<<<<<< HEAD
-        Dimension asdf = new Dimension();
-        return asdf;
-=======
         Dimension dimension = new Dimension();
         return dimension;
->>>>>>> origin/master
     }
 
     public void pickColor()
     {
-
+        activeColor = JColorChooser.showDialog(null, "Choose a Color", Color.WHITE);
     }
 
     public void addCircle()
@@ -59,58 +48,37 @@ public class DrawingPanel extends JPanel
     {
 
     }
-<<<<<<< HEAD
-    public void paintComponent(Graphics g)      
-    {
-        
-    }
-
-//     class ClickListener implements MouseListener
-//     {
-//         public void mouseClicked(MouseEvent event) 
-//         {
-//             int x = event.getX();
-//             int y = event.getY();
-//             this.drawDot(x,y);
-//         }
-//     }
-}
-
-
-
-=======
 
     public void paintComponent(Graphics g)
     {
 
     }
-//     public class MyMouseListener implements MouseListener
-//     {
-//         public void mousePressed(MouseEvent event)
-//         {
-//             int x = event.getX();
-//             int y = event.getY();
-//         }
-// 
-//         public void mouseReleased(MouseEvent event)
-//         {
-// 
-//         }
-// 
-//         public void mouseClicked(MouseEvent event) 
-//         {
-// 
-//         }
-// 
-//         public void mouseEntered(MouseEvent event) 
-//         {
-// 
-//         }
-// 
-//         public void mouseExited(MouseEvent event)
-//         {
-// 
-//         }
-//     }
+    public class MyMouseListener implements MouseListener
+    {
+        public void mousePressed(MouseEvent event)
+        {
+            int x = event.getX();
+            int y = event.getY();
+        }
+
+        public void mouseReleased(MouseEvent event)
+        {
+
+        }
+
+        public void mouseClicked(MouseEvent event) 
+        {
+
+        }
+
+        public void mouseEntered(MouseEvent event) 
+        {
+
+        }
+
+        public void mouseExited(MouseEvent event)
+        {
+
+        }
+    }
 }
->>>>>>> origin/master
