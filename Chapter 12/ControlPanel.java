@@ -28,33 +28,41 @@ public class ControlPanel extends JPanel
         this.button2 = new JButton("Add Circle");
         this.add(this.button2);
 
-        //         CircleListener circleListener = new CircleListener();
-        //         this.button2.addActionListener(CircleListener);
+        this.button2.addActionListener(new CircleListener());
 
         this.button3 = new JButton("Add Square");
         this.add(this.button3);
 
-        //         SquareListener squareListener = new SquareListener();
-        //         this.button3.addActionListener(SquareListener);
-        //         
+        this.button3.addActionListener(new SquareListener());
+
+        button.addActionListener(new ColorListener());
     }
     public class ColorListener implements ActionListener
     {
         public void actionPerformed(ActionEvent event)
         {
             canvas.pickColor();
-            Color currentColor = canvas.getColor();
-            getColorPanel.setBackground(currentColor);
+            panel.setBackground(canvas.getColor());
         }
     }
-    //     public class CircleListener implements ActionListener
-    //     {
-    //         canvas.addCircle();
-    //         canvas.requestFocusInWindow();
-    //     }
-    //     public class SquareListener implements SquareListener
-    //     {
-    //         canvas.addSquare();
-    //         canvas.requestFocusInWindow();
-    //     }
+
+    public class CircleListener implements ActionListener
+    {
+        public void actionPerformed(ActionEvent event)
+        {
+            canvas.addCircle();
+            System.out.println("You made a circle");
+            //         canvas.requestFocusInWindow();
+        }
+    }
+
+    public class SquareListener implements ActionListener
+    {
+        public void actionPerformed(ActionEvent event)
+        {
+            canvas.addSquare();
+            System.out.println("You made a square");
+            //         canvas.requestFocusInWindow();
+        }
+    }
 }
