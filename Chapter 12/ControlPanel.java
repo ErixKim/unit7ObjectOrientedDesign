@@ -17,7 +17,7 @@ public class ControlPanel extends JPanel
     public ControlPanel(DrawingPanel canvas)
     {
         this.canvas = canvas;
-        
+
         this.button = new JButton("Pick Color");
         this.add(this.button);
 
@@ -27,14 +27,16 @@ public class ControlPanel extends JPanel
 
         this.button2 = new JButton("Add Circle");
         this.add(this.button2);
-        CircleListener circleListener = new CircleListener();
-        this.button2.addActionListener(CircleListener);
+
+        //         CircleListener circleListener = new CircleListener();
+        //         this.button2.addActionListener(CircleListener);
 
         this.button3 = new JButton("Add Square");
         this.add(this.button3);
-        SquareListener squareListener = new SquareListener();
-        this.button3.addActionListener(SquareListener);
-        
+
+        //         SquareListener squareListener = new SquareListener();
+        //         this.button3.addActionListener(SquareListener);
+        //         
     }
     public class ColorListener implements ActionListener
     {
@@ -45,14 +47,14 @@ public class ControlPanel extends JPanel
             getColorPanel.setBackground(currentColor);
         }
     }
-    public class CircleListener implements ActionListener
-    {
-        canvas.addCircle();
-        //         canvas.requestFocusInWindow();
-    }
-    public class SquareListener implements SquareListener
-    {
-        canvas.addSquare();
-        //         canvas.requestFocusInWindow();
-    }
+    //     public class CircleListener implements ActionListener
+    //     {
+    //         canvas.addCircle();
+    //         canvas.requestFocusInWindow();
+    //     }
+    //     public class SquareListener implements SquareListener
+    //     {
+    //         canvas.addSquare();
+    //         canvas.requestFocusInWindow();
+    //     }
 }

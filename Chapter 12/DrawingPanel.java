@@ -14,7 +14,7 @@ import java.awt.geom.Ellipse2D;
 import java.util.Random;
 public class DrawingPanel extends JPanel
 {
-    //     private ArrayList<Shape> shapeList = new ArrayList<Shape>();
+    private ArrayList<Shape> shapeList = new ArrayList<Shape>();
     public DrawingPanel()
     {
         //         MouseListener listener = new MousePressListener();
@@ -51,32 +51,33 @@ public class DrawingPanel extends JPanel
     {
 
     }
-//     public class MyMouseListener implements MouseListener
-//     {
-//         public void mousePressed(MouseEvent event)
-//         {
-//             int x = event.getX();
-//             int y = event.getY();
-//         }
-// 
-//         public void mouseReleased(MouseEvent event)
-//         {
-// 
-//         }
-// 
-//         public void mouseClicked(MouseEvent event) 
-//         {
-// 
-//         }
-// 
-//         public void mouseEntered(MouseEvent event) 
-//         {
-// 
-//         }
-// 
-//         public void mouseExited(MouseEvent event)
-//         {
-// 
-//         }
-//     }
+    //     public class MyMouseListener implements MouseListener
+    //     {
+    //         public void mousePressed(MouseEvent event)
+    //         {
+    //             int x = event.getX();
+    //             int y = event.getY();
+    //         }
+    // 
+    //         public void mouseReleased(MouseEvent event)
+    //         {
+    // 
+    //         }
+    // 
+    //         public void mouseClicked(MouseEvent event) 
+    //         {
+    // 
+    //         }
+    // 
+    //         public void mouseEntered(MouseEvent event) 
+    //         {
+    // 
+    //         }
+    // 
+    //         public void mouseExited(MouseEvent event)
+    //         {
+    // 
+    //         }
+    //     }
+    //     
 }
