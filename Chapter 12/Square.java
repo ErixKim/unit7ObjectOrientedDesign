@@ -5,7 +5,7 @@ import java.awt.geom.Rectangle2D;
 import java.awt.Rectangle;
 /**
  * Square is a subclass of Shape and creates a square by calling on its superclass' constructor
- * and using Rectangle2D
+ * and using Rectangle2D.
  * 
  * @author Eric Kim
  * @version 3/4/2016

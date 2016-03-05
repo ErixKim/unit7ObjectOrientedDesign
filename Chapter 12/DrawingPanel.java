@@ -199,6 +199,7 @@ public class DrawingPanel extends JPanel
          */
         public void mouseDragged(MouseEvent event)
         {
+            //Calls the move method if activeShape is not equal to null
             if (activeShape != null)
             {
                 activeShape.move(event.getX(),event.getY());

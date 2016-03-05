@@ -9,7 +9,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 /**
- * The control panel class is a subclass of JPanel and creates the buttons and panels
+ * The control panel class is a subclass of JPanel and creates the buttons and panels.
  * 
  * @author Eric Kim
  * @version 3/4/2016

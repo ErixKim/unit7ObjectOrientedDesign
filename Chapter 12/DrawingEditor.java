@@ -4,7 +4,7 @@ import java.awt.BorderLayout;
 import javax.swing.*;
 /**
  * DrawingEditor class is a subclass of JFrame and creates the frame which contains the buttons and
- * where the shapes are going to be drawn
+ * where the shapes are going to be drawn.
  * 
  * @author Eric Kim
  * @version 3/4/2016

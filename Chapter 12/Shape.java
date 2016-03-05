@@ -3,7 +3,7 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 /**
      * Shape is an abstract class that contains abstract methods and instance variables for the
-     * subclasses of shape to use
+     * subclasses of shape to use.
      * 
      * @author Eric Kim
      * @version 3/4/2016

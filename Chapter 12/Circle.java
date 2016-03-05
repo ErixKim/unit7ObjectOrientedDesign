@@ -4,7 +4,7 @@ import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
 /**
  * Circle is a subclass of Shape and creates a circle by calling on its superclass' constructor
- * and using Ellipse2D
+ * and using Ellipse2D.
  * 
  * @author Eric Kim
  * @version 3/4/2016
