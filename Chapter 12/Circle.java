@@ -55,12 +55,11 @@ public class Circle extends Shape
     {
         circle = new Ellipse2D.Double(this.getCenter().getX() - this.getRadius(), this.getCenter().getY() - this.getRadius(), 2*this.getRadius(), 2*this.getRadius());
         //Draws the circle
-        g2.draw(circle);
         g2.setColor(this.getColor());
         if (filled == true)
         {
             g2.fill(circle);
         }
-        
+        g2.draw(circle);
     }
 }

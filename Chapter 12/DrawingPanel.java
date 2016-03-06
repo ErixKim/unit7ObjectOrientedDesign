@@ -116,12 +116,23 @@ public class DrawingPanel extends JPanel
      */
     public void paintComponent(Graphics g)
     {
-        Graphics2D g2 = (Graphics2D) g;
+        //Casts the Graphics object passed in as a parameter to a Graphics g2 object
         super.paintComponent(g);
-        for(Shape shapes: shapeList)
+        Graphics2D g2 = (Graphics2D) g;
+        //Loops through the shapes list from beginning to end, which is the same as looping 
+        //through all of the shapes added by the user to the drawing panel from bottom to top
+    
+        for (Shape shapes : this.shapeList)
         {
-            //A check for an active shape
-            shapes.draw(g2, activeShape == null? true: (!(activeShape == shapes)));
+            if (shapes.equals(this.activeShape) == false)
+            {
+                shapes.draw(g2, true);
+            }
+        }
+        //if there is an active shape, draw it last
+        if (this.activeShape != null)
+        {
+            this.activeShape.draw(g2, false);
         }
         repaint();
     }
