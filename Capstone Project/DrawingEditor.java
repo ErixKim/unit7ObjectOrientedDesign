@@ -1,6 +1,5 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
 import javax.swing.*;
 /**
  * DrawingEditor class is a subclass of JFrame and creates the frame which contains the buttons and
@@ -24,6 +23,7 @@ public class DrawingEditor extends JFrame
         this.canvas = new DrawingPanel();
         //Puts a new ControlPanel object into the controls instance variable
         controls = new ControlPanel(canvas);
+        this.add(canvas);
         //Sets the title of the window to "Drawing Editor" and the size of the frame to 600x600
         this.setTitle("Kill the Goomba");
         this.setSize(600,600);
